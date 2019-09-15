@@ -19,7 +19,7 @@ void setup(){
 // Função que define o brilho do LED aleatóriamente entre 136 e 255.
 int brilhoLed(int brilhoFixo, int brilhoAleatorio){
 	brilho = brilhoFixo + random(brilhoAleatorio);
-	
+
 	return brilho;
 }
 
@@ -28,6 +28,6 @@ void loop(){
 	analogWrite(ledAmarelo1, brilhoLed(brilhoFixo, brilhoAleatorio));
 	analogWrite(ledVermelho, brilhoLed(brilhoFixo, brilhoAleatorio));
 	analogWrite(ledAmarelo2, brilhoLed(brilhoFixo, brilhoAleatorio));
-	
+
 	delay(random(miliSegundos));
 }
